@@ -1,7 +1,7 @@
 # Survey Vector Pipeline
 
 Modular, scalable pipeline for large-scale open-ended survey answer analysis, vectorization, dimensionality reduction, clustering, and interactive dashboarding.
-https://github.com/user-attachments/assets/d4adc90d-4b81-4344-baa6-aff893c763a2
+![3dgraph](https://github.com/user-attachments/assets/d4adc90d-4b81-4344-baa6-aff893c763a2)
 
 ## Directory Structure
 
