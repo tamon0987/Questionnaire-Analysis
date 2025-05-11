@@ -1,0 +1,36 @@
+random_seed: 42
+
+data_source:
+  type: csv
+  path: ./data/surveysample.csv
+
+preprocessing:
+  unicode_normalize: NFKC
+  pii_masking:
+    enabled: true
+    language: ja
+    spacy_model: ja_core_news_lg
+  language_filter: ja
+
+vectorizer:
+  type: hashing
+  n_features: 262144
+  ngram_range: [1, 2]
+  binary: false
+  hash_seed: 12345
+
+reducer:
+  type: svd
+  n_components: 3
+  incremental: true
+
+clustering:
+  type: kmeans
+  n_clusters: 10
+  scaler: standard
+
+dashboard:
+  framework: dash
+  port: 8050
+  downsample: true
+  use_webgl: true
